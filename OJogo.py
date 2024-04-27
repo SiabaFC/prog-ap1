@@ -165,6 +165,7 @@ def iniciar_combate(aventureiro, monstro):
         monstro_defender(monstro,dano)
         print(aventureiro["nome"], "causa", dano, "de dano! Vida do monstro:", monstro["vida"])
         if not monstro_esta_vivo(monstro):
+            print("Monstro foi derrotado!")
             return True
         dano = monstro_atacar(monstro)
         aventureiro_defender(aventureiro,dano)
